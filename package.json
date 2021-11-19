@@ -5,19 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
-    "test:staged": "jest --watch"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "test:staged": "jest --watch",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
-      "*.ts": [
-        "eslint 'src/**' --fix",
-        "npm run test:staged",
-        "git add"
-      ]
+    "*.ts": ["eslint --fix", "git add", "npm run test:staged"]
   },
   "keywords": [],
   "author": "",

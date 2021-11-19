@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
-    "test:staged": "jest --watch",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.ts": ["eslint --fix", "git add", "npm run test:staged"]
+    "test:staged": "jest --watch"
   },
   "keywords": [],
   "author": "",

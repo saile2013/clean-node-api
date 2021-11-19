@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
-    "test:staged": "jest --watch"
+    "test:staged": "jest --watch",
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -25,11 +26,5 @@
     "lint-staged": "^12.0.3",
     "ts-jest": "^27.0.7",
     "typescript": "^4.5.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": ""
-    }
   }
 }

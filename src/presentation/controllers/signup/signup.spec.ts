@@ -26,12 +26,6 @@ const makeAddAccount = (): AddAccount => {
   return new AddAccountStub()
 }
 
-interface SutTypes {
-  sut: SignUpController
-  addAccountStub: AddAccount
-  emailValidatorStub: EmailValidator
-}
-
 const makeSut = (): SutTypes => {
   const emailValidatorStub = makeEmailValidator()
   const addAccountStub = makeAddAccount()
@@ -41,6 +35,12 @@ const makeSut = (): SutTypes => {
     addAccountStub,
     emailValidatorStub
   }
+}
+
+interface SutTypes {
+  sut: SignUpController
+  addAccountStub: AddAccount
+  emailValidatorStub: EmailValidator
 }
 
 describe('SingUp Controller', () => {

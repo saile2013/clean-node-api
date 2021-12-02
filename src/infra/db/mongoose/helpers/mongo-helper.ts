@@ -1,5 +1,4 @@
 import mongoose, { Collection } from 'mongoose'
-import { AccountModel } from '../../../../domain/models/account'
 
 export const MongoHelper = {
   async connect (uri: string): Promise<void> {
